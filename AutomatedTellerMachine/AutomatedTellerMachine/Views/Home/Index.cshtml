@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    @*Override the default layout*@
+    //Layout = "LayoutNotExist.cshtml";
+}
+
+<div class="row">
+    <!-- Apply margin to each column-->
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-lg btn-block">
+            Withdraw
+            <span class="glyphicon glyphicon-circle-arrow-down"></span>        
+        </a>
+        <a href="#" class="btn btn-primary btn-lg btn-block">
+            Quick Cash $100
+            <span class="glyphicon glyphicon-flash"></span>
+        </a>
+        <a href="@Url.Action("Details","CheckingAccount")" class="btn btn-primary btn-lg btn-block">
+            Balance Inquiry
+            <span class="glyphicon glyphicon-question-sign"></span>
+        </a>
+    </div>
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-lg btn-block">
+            Print Statement
+            <span class="glyphicon glyphicon-print"></span>
+        </a>
+        <a href="#" class="btn btn-primary btn-lg btn-block">
+            Transfer Fund
+            <span class="glyphicon glyphicon-transfer"></span>
+        </a>
+        <a href="@Url.Action("Deposit","Transaction")" class="btn btn-primary btn-lg btn-block">
+            Deposit
+            <span class="glyphicon glyphicon-circle-arrow-up"></span>
+        </a>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>var testing = true;</script>
+}
+
+@*RAZOR STUFF*@
+
+@*you are using @Request.Browser.Browser .. ...
+
+
+
+@{var amounts = new List<decimal> {100, 25.50m, -40, 275.99m};}
+
+<ul>
+    @foreach (var amount in amounts)
+    {
+        <li>@FormatAmount(amount)</li>
+        <text>plain text</text>
+        @:plain text
+    }
+</ul>
+
+@helper FormatAmount(decimal amount)
+{
+var color = "green";
+    if (amount < 0)
+    {
+        color = "red";
+    }
+    <span style="color: @color">@($"{amount:c}")</span>
+}*@
