@@ -119,3 +119,6 @@ C:\Dev\MvcAutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine\o
 C:\Dev\MvcAutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.dll
 C:\Dev\MvcAutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.pdb
 C:\Dev\MvcAutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csprojResolveAssemblyReference.cache
+C:\Dev\mvcBank\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.InitialCreate.resources
+C:\Dev\mvcBank\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.AccountNumberChanges.resources
+C:\Dev\mvcBank\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.GenerateResource.Cache
